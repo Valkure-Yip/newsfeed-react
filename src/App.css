@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -29,4 +29,44 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.App {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.App header {
+  text-align: center;
+  font-size: 50pt;
+}
+
+.Feed-stream {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.Column {
+  width:250px;
+}
+
+.News-item {
+  width:90%;
+  margin: 0 auto;
+}
+
+.News-item img {
+  width: 100%;
+}
+
+.News-item a {
+  text-decoration: none;
+}
+
+.Load-btn {
+  width: 100px;
+  height: 30px;
+  display: block;
+  margin: auto;
 }
