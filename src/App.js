@@ -9,12 +9,16 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      // the number of columns of the masonry structure, changes with window width
       columnNum: 4,
+      // Array of article entries
       // articles: bbcObj["articles"]  // test: static local data
       articles: []
     };
     this.loadArticles();
   }
+
+  // add event listener for responsive columns
   componentDidMount(){
     // this.loadArticles();
     window.addEventListener("resize", this.onWindowResize.bind(this));
@@ -57,6 +61,7 @@ class App extends Component {
   //   return columnLists;
   // }
 
+  // ajax request news from api
   loadArticles(){
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function(){
@@ -100,8 +105,9 @@ class App extends Component {
   }
 }
 
-//props.columnNum
-//props.columnLists
+// 
+// props.columnNum
+// props.columnLists
 class FeedStream extends Component {
   constructor(props) {
     super(props);
